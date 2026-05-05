@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: prueba-tecnica-back
+
+api:
+  security:
+    token: local-development-token
+    header-name: X-API-TOKEN
+  cors:
+    allowed-origins:
+      - http://localhost:4200
