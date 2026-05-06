@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: prueba-tecnica-back
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: false
+
+api:
+  cors:
+    allowed-origins:
+      - http://localhost:4200
+
+aemet:
+  base-url: https://opendata.aemet.es/opendata/api
+  api-key: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZHJpYW5fbGR0Xzk1QGhvdG1haWwuY29tIiwianRpIjoiZjE3MzI0YTktMTY1Ni00YmY0LTg5NDAtMWNlMWVlNDU4MDI2IiwiaXNzIjoiQUVNRVQiLCJpYXQiOjE3Nzc4ODY5MzQsInVzZXJJZCI6ImYxNzMyNGE5LTE2NTYtNGJmNC04OTQwLTFjZTFlZTQ1ODAyNiIsInJvbGUiOiIifQ.q7wdtf04MxbbPUa5YM_oxQpOa-HkIZSw8dHb_gPX-QA
