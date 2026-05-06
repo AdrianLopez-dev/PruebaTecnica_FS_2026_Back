@@ -1,6 +1,5 @@
 target/
 .git/
-.claude/
 .idea/
 *.iml
 mvnw.cmd
