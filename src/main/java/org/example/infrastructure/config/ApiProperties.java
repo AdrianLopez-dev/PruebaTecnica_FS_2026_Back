@@ -4,11 +4,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.List;
 
+// Propiedades del bloque "api" en application.yml
 @ConfigurationProperties(prefix = "api")
-public record ApiProperties(Security security, Cors cors) {
-
-    public record Security(String token, String headerName) {
-    }
+public record ApiProperties(Cors cors) {
 
     public record Cors(List<String> allowedOrigins) {
     }
